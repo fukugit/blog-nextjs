@@ -2,6 +2,10 @@
 
 [https://fukugit.github.io/blog-nextjs/](https://fukugit.github.io/blog-nextjs/)
 
+## How to run on local
+```
+npm run dev
+```
 
 ## Deploy your own
 
