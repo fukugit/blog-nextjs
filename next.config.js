@@ -8,7 +8,7 @@ module.exports = {
   images: {
     unoptimized: true,
   },
-  basePath,
+  basePath: basePath,
 };
 
 console.log('Base Path:', basePath);
