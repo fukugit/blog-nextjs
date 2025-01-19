@@ -1,10 +1,12 @@
-// next.config.js
+const isProduction = process.env.NODE_ENV === 'production'; // 環境を判定
+const basePath = isProduction ? '/blog-nextjs' : ''; // 本番環境のみ basePath を設定
+
 module.exports = {
   output: 'export',
   images: {
     unoptimized: true,
   },
-  basePath: '/blog-nextjs',
+  basePath,
 };
 
 console.log('Base Path:', basePath);
