@@ -1,6 +1,7 @@
 import cn from "classnames";
 import Link from "next/link";
 import Image from "next/image";
+import { useRouter } from 'next/router';
 
 type Props = {
   title: string;
@@ -9,9 +10,10 @@ type Props = {
 };
 
 const CoverImage = ({ title, src, slug }: Props) => {
+  const { basePath } = useRouter(); // Next.js の `basePath` を取得
   const image = (
     <Image
-      src={src}
+      src={`${basePath}${src}`}
       alt={`Cover Image for ${title}`}
       className={cn("shadow-sm w-full", {
         "hover:shadow-lg transition-shadow duration-200": slug,
