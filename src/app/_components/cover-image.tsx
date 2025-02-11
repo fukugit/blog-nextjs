@@ -9,6 +9,7 @@ type Props = {
 };
 
 const CoverImage = ({ title, src, slug }: Props) => {
+  // Get the base path from the environment variable of '/blog-nextjs'
   const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
   const image = (
     <Image
