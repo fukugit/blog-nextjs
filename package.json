@@ -3,6 +3,7 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
+    "postbuild": "mkdir -p public/posts && rsync -av --include='*/' --include='*.jpg' --include='*.png' --include='*.gif' --include='*.webp' --exclude='*' _posts/ public/posts/",
     "start": "next start"
   },
   "dependencies": {
