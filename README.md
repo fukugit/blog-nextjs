@@ -4,6 +4,7 @@
 
 ## How to run on local
 ```
+npm run postbuild
 npm run dev
 ```
 
